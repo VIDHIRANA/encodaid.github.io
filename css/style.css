@@ -1,6 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
+#nav-buttons:hover{
+	color: grey;
+	font-size: 1.3em;
+}
+
+.nav-item a{
+	color: #2e2e2e;
+}
 
 *{
 	margin: 0;
@@ -31,7 +39,7 @@ html {
 .logo img{
     margin-top: 0px!important;
     margin-left: 0px!important;
-	width: 300px!important;
+	width:18em;
 	height: 80px!important;
 	display:inline-flex;
 }
@@ -167,7 +175,7 @@ li{
 }
 
 .nav-item a{
-	color: black!important;
+	color: black;
 	font-weight: bold;
 }
 
