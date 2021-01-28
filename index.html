@@ -18,7 +18,7 @@
 			<nav class=" navbar navbar-expand-lg fixed-top">
 				<div class="container text-uppercase pt-0">
 					<div class="logo ">
-						<img src="images/1.png">
+						<img src="images/logo_new.png">
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -102,7 +102,7 @@
 								<h2 class=" font-weight-bold">ABOUT US</h2>
 								<p>Keeping together is progress,
 									Working together is success.
-									EncodAid established by an ingenious woman of today’s generation, works towards creating a safe and secure environment for people today who wish to work towards excellence. With an enthusiasm to launch user friendly products our company has a dream to create a mark on the lives of people with not just one target population but the whole wide world., we envision to bring a revolt of technology with new innovations that enlists our country in most advanced countries in near future. EncodAid lives by its Moto - “The Code At Your Aid”. We work hard towards providing high quality products that provides satisfaction and assurance to our clients with respect to our services, solutions to complex problems .
+									EncodAid established by an ingenious woman of today’s generation, works towards creating a safe and secure environment for people today who wish to work towards excellence. With an enthusiasm to launch user friendly products our company has a dream to create a mark on the lives of people with not just one target population but the whole wide world., we envision to bring a revolt of technology with new innovations that enlists our country in most advanced countries in near future. EncodAid lives by its Moto - “The Code At Your Aid”. We work hard towards providing high quality products that provides satisfaction and assurance to our clients with respect to our services, solutions to complex problems.
 								</p>
 							</div>
 						</div>
@@ -488,26 +488,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
-						<form action="#" >
+						<form method="post" autocomplete="off" name="google-sheet" >
 							<div class="form-group">
 								<!-- <label for="username">Name:</label> -->
-								<input type="text" class="form-control" id="username" placeholder="Enter Your Name " name="username" autocomplete="off">
+								<input type="text" class="form-control" id="username" placeholder="Enter Your Name " name="Username" value="" required="" autocomplete="off">
 							</div>
 							<div class="form-group">
 								<!-- <label for="email">Email:</label> -->
-								<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" autocomplete="off">
+								<input type="email" class="form-control" id="email" placeholder="Enter email" name="Email" value="" required="" autocomplete="off">
 							</div>
 							
 							<div class="form-group">
 								<!-- <label for="mobile">Mobile Number:</label> -->
-								<input type="text" class="form-control" id="mobile" placeholder="Enter Mobile Number" name="mobile_no">
+								<input type="text" class="form-control" id="mobile" placeholder="Enter Mobile Number" value="" required="" name="Mobile">
 							</div>
 							<div class="form-group">
 								<!--  <label for="comment">Message:</label> -->
-								<textarea class="form-control" rows="4" id="comment" placeholder="Enter Your Message"></textarea>
+								<textarea class="form-control" rows="4" id="comment" placeholder="Enter Your Message" name="Message" value="" required=""></textarea>
 							</div>
 							<div class="d-flex justify-content-center">
-								<button type="submit" class="text-center" onclick="return checkvalidation()">Submit</button>
+								<input class="submit" type="submit" name="submit" value="submit" class="text-center">
 							</div>
 						</form>
 					</div>
@@ -628,7 +628,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script>
+		<!-- <script>
 			$('.count').counterUp({
 				delay:10,
 				time:3000
@@ -671,6 +671,21 @@
 		document.body.scrollTop = 0; // For Safari
 		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
-		</script>
+		</script> -->
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxAgAmOvUK37HDdpcyrXanrQ9wVR33vtnBT_hLk2aS7ZK9ZOtiZoxwr/exec'
+	const form = document.forms['google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</body>
 </html>

@@ -37,10 +37,10 @@ html {
 }
 
 .logo img{
-    margin-top: 0px!important;
+    margin-top: 5px!important;
     margin-left: 0px!important;
-	width:250px;
-	height: 80px!important;
+	width:234px;
+	height: 75px!important;
 	display:inline-flex;
 	position: absolute;
     top: 0px;
@@ -391,7 +391,18 @@ li{
     padding: 13px 30px;
     background: transparent;
 }
-
+.submit{
+	color: #143352;
+	background-color: #fff;
+	height: 40px;
+	width: 80px;
+    border-radius: 16px;
+    border: none;
+}
+.submit:hover{
+	color: whitesmoke;
+	background-color:#143352;
+}
 
 .card:hover {
 	transform: translateY(-20px);
