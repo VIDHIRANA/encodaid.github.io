@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Encodaid services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Encoidaid" name="keywords">
+        <meta content="Encodaid service providers" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/image0.png" type="image/gif" sizes="16x16">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+           
+       .navibar{
+           display: grid;
+           grid-template-columns: 1fr 3fr;
+           align-items: center;
+           height: 12vh;
+           overflow: hidden;
+         }
+         
+         .navibar img {
+           height: 10vh;
+           width: auto;
+           justify-self: start;
+           margin-left: 60px;
+         }
+         
+         .navibar ul {
+           list-style: none;
+           display: grid;
+           grid-template-columns: repeat(6,1fr);
+           justify-self: end;
+           
+         }
+         
+         .navi-item a {
+           color: rgb(102, 102, 102);
+           font-size: 1.1rem;
+           font-weight: 400;
+           text-decoration: none;
+           transition: color 0.3s ease-out;
+         }
+         
+         .navi-item a:hover {
+           color: #193755;
+         }
+         ul {
+             margin: 0px;
+             padding: 0px;
+         }
+         .menu-toggle .bar{
+ width: 25px;
+ height: 3px;
+ background-color: #3f3f3f;
+ margin: 5px auto;
+ -webkit-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+ justify-self: end;
+ margin-right: 25px;
+ display: none;
+}
+
+.menu-toggle:hover{
+ cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+ opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+ -webkit-transform: translateY(8px) rotate(45deg);
+ -ms-transform: translateY(8px) rotate(45deg);
+ -o-transform: translateY(8px) rotate(45deg);
+ transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+ -webkit-transform: translateY(-8px) rotate(-45deg);
+ -ms-transform: translateY(-8px) rotate(-45deg);
+ -o-transform: translateY(-8px) rotate(-45deg);
+ transform: translateY(-8px) rotate(-45deg);
+}
+@-webkit-keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+@-moz-keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+@keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+/* Media Queries */
+
+ /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) { 
+ .features {
+   flex-direction: column;
+   padding: 50px;
+ }
+ 
+ /* MOBILE HEADINGS */
+ 
+ h1 {
+   font-size: 1.9rem;
+ }
+ 
+ h2 {
+   font-size: 1rem;
+ }
+ 
+ p {
+   font-size: 0.8rem;
+ }
+ 
+ /* MOBILE NAVIGATION */
+    
+ .navibar ul {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   justify-content: start;
+   top: 55px;
+   background-color: #fff;
+   width: 100%;
+   height: calc(100vh - 55px);
+   transform: translate(-101%);
+   text-align: center;
+   overflow: hidden;
+ }
+ 
+ .navibar li {
+   padding: 15px;
+ }
+ 
+ .navibar li:first-child {
+   margin-top: 50px;
+ }
+ 
+ .navibar li a {
+   font-size: 1rem;
+ }
+  
+ .menu-toggle, .bar {
+   display: block;
+   cursor: pointer;
+ }
+ 
+ .mobile-navi {
+ transform: translate(0%)!important;
+}
+}
+.cover{
+  width: 100vw;
+  height: 65vh;
+  background-image: url(./img/cover1.PNG);
+  background-size:100vw 65vh
+  ;
+}
+.contain{
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(156, 156, 156);
+  background-color: #fff;
+  margin-bottom: 5vh;
+  
+  padding:7vw;
+  padding-top: 5vh;
+}
+.start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+    </head>
+
+    <body class="page">
+        <!-- Top Bar Start -->
+   <!-- Nav Bar Start -->
+   <div class="navi-wrapper">
+    <nav class="navibar nav-sticky">
+      <img src="logo.png" alt="Company Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+        <li class="navi-item"><a href="index.html">Home</a></li>
+        <li class="navi-item"><a href="#about">About</a></li>
+        <li class="navi-item"><a href="service.html">Services</a></li>
+        <li class="navi-item"><a href="index.html">Blog</a></li>
+        <li class="navi-item"><a href="#contact">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+<!-- <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Confer</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="feature.html" class="nav-item nav-link">Feature</a>
+                <a href="advisor.html" class="nav-item nav-link">Advisor</a>
+                <a href="review.html" class="nav-item nav-link">Review</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html" class="dropdown-item">Blog Page</a>
+                        <a href="single.html" class="dropdown-item">Single Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Nav Bar End -->
+<section class="cover">
+</section>   
+<div class="container contain center">
+    <div class="start">
+    <h1>Top 10 Websites Trends & Designs 0f 2021</h1>
+    <br>
+    <br>
+    <br>
+    <p>Website. What is a Website? Do you know what a website is? Why people make a  website? Or What is website's true potential? I am sure many of you consider a  website like a page of a notebook i.e., just information. In our daily life, we face many  difficulties or problems, and to counter it, website comes into action. From food to  knowledge, there is a website of every thing. There are many coders, freelancers, and  other people who charge thousands, millions of rupees to make a website in the  market. But just creating a website is not enough. Imagine a website be a shop and  getting a domain name and URL is like getting a plot for the shop. But just getting a  property isn’t enough to generate income, you will have to choose its appearance,  decide what to sell and many other different aspects to make a good fortune of  income. 
+   </p>
+   <br>
+   <p>The creation of a website is the same where you must create content, select images  and make it appear attractive accordingly. Did you know the most demanding part in  the creation of the website is its appearance? Yes, the reason behind it is the role  appearance plays in attracting traffic. I mean, it's like judging a book by its cover. The  audience will never pay heed to your content or your work until and unless they find  the website attractive enough. And that's why most bloggers or other businessman  don’t get much profit out of their work. Now, if you are a person who suffers the  same and want to make sure that your website is unique, then here are some top  2021 website design trends because, as we know, <strong>"Design is something that  made intelligence visible." </strong>
+   </p>
+ </div>
+   <br><br>
+   
+   <h3 > 1) Retro Font 
+       </h3>
+   <br>
+   <p>We all have heard the famous phrase" Old is Gold" and these days, it is getting true  with each passing moment and that’s why Retro Fonts have gained their much appreciated applause. However, the throwback typography has gone through a bit of  a resurgence. We do not see the same tired fonts we rather see an upsurge in styling  and artistry reimagination of what retro fonts can be seen as today. As we can see in  the below designs, instead of feeling spoiled and cliche, they breathe new life into old  retro bold fonts with a dash of experimentation 
+   </p>
+    <img src="./img/b11.png" alt="" width="100%">
+    <br>
+    <h3>2)3D Visuals Everywhere </h3>
+    <p>
+       Everything seems nice when it seems to be real. 3D designs has come a long way  from the blocky and bevelled edges of GeoCities. We see high-quality 3D visuals  weaved seamlessly into web designs. As we can see in these designs, there’s an  excellent sense of harmony between all design elements. It is the perfect example of  how in the most minimalistic layouts, 3D can make an ever-bigger impression. 
+   </p>
+   <img src="./img/b12.png" alt="" width="100%">
+   <br>
+   <h3>3) Dark Mode</h3>
+   <p>The dark mode is hitting more screens in 2021. This isn't just a reversal of the color  palette. It is an intentional combination of deeper-darker colors that create the  same visual feel as light mode and maintain readability and functionality. In the  projects, they often give a pensive effect. Thus it is vital to think about how dark  mode influences the overall vibe of the information and content of the website  design. 
+   </p>
+   <img src="./img/b13.png" alt="" width="100%">
+   <br>
+   <h3>4) Abstract Art Composition 
+   </h3>
+   <p>Nothing is more challenging than interpreting the art, especially abstract art. It  improves our creativity and imagination as it stimulates our high-level areas of the  brain. It can include images of people; they still evoke emotion without them. Their  burstiness gives energetic vibes, and their many vibrant colours are infectiously  warm. As we can see below, these proj</p>
+   <img src="./img/b14.png" alt="" width="100%">
+   <br>
+   <h3>5) Digital Interpretations of Physical </h3>
+   <p>Products are the most essential aspect of a website. The main reason for the creation  of the website is the promotion of a particular product and thus are usually located at  the heart of the website. Products are inspiring literal design elements through  creative, digital interpretations of physical media. As we can see in these designs, the  approach creates visual synergy between the product and its website; it makes web  pages feel more organic and unexpected. 
+   </p>
+    <img src="./img/b15.png" alt="" width="100%">
+   <br>
+   <h3>6) Black and White Illustrations 
+   </h3>
+   <p>Who says classics are cliché/boring? I think classics are the only thing that can make  someone or something extraordinary. Black and white are the two classic colours and  nothing more is excellent than their illustrations. The nice thing about their  illustrations in a website is their seemingly real and in-the-moment presence. As we  can see in the designs, these illustrations seem to “match” almost any design  aesthetic and it makes them a popular option for all kinds of industries or website  types.
+   </p>
+   <img src="./img/b16.png" alt="" width="100%">
+   <br>
+   <h3>7) A focus on muted colours</h3>
+   <p>Just like grains can give a design more natural feel, so can subdued colours. The  muted colours are very distinct and have a powerful impact on structures like the  perfect backdrop or the hand-drawn styled text and illustrations. The slightly buzzing  grain that’s almost indiscernible or a subtle distortion in the light and dark  backgrounds making the design feel very much alive. </p>
+   <img src="./img/b17.png" alt="" width="100%">
+   <br>
+   <h3>8) Scrolling Cards 
+   </h3>
+   <p>Just seeing written text and reading it is so boring and dull. I mean, who likes to  just read and read on a single page? It makes a person less attracted towards the  content. And thus, to make an impact many bloggers have started putting scrolling  cards which are now an integral part of designs. Whether scrolling horizontally or  vertically, they add swift action to a website and are a great way to present  information. 
+   </p>
+   <img src="./img/b18.png" alt="" width="100%">
+   <br>
+   <h3>9) Playful Typography Effects and </h3>
+   <p>Animated typographic elements are something that uses a sentence or collection of  words for decorative purposes. A lively string of words will often be seen as a  particular shape, contrary to the standard horizontal, left-to-right sentence format.  As we can see in the design, this technique helps to convey a branding or marketing  objective, creating the desired vibe or visual theme in a fun manner. 
+   </p>
+   <img src="./img/b19.png" alt="" width="100%">
+   <br>
+   <h3>10) Simple Shapes 
+   </h3>
+   <p>Keeping Simple is good as no one likes anything too complicated. Complicated  content makes things fuzzy and sometimes creates misunderstandings and  misinterpretations among people. The same goes for shapes. The artistic style of the  90’s era has made its comeback in web design trends — this time in the form of  simple shape motifs integrated throughout design schemes. As we can see in the  design, two-dimensional shape illustrations boast one shade of colour and no depth  or texture. These illustrations entail their common goal is to draw the attention of the  website visitor.
+   </p>
+   <img src="./img/b110.png" alt="" width="50%">
+   <br>
+
+</div>
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-contact">
+                            <h2>Our Head Office</h2>
+                            <p><i class="fa fa-map-marker"></i>New Delhi, India</p>
+                            <p><i class="fa fa-phone"></i>+9184688 97888</p>
+                            <p><i class="fa fa-envelope"></i>contact@encodaid.com</p>
+                            <div class="footer-social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook-f"></i></a>
+                                <a href=""><i class="fa fa-youtube"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-link">
+                            <h2>Quick Links</h2>
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="footer-newsletter">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our exiting news letter Today and get maynd blowing acticals and news related to tech buzz and hot news.
+                    </p>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email goes here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">ENCODAID</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Designed By <a href="https://encodaid.com">Encodaid</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

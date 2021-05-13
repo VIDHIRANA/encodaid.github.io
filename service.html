@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Encodaid services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Encoidaid" name="keywords">
+        <meta content="Encodaid service providers" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/image0.png" type="image/gif" sizes="16x16">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+           
+       .navibar{
+           display: grid;
+           grid-template-columns: 1fr 3fr;
+           align-items: center;
+           height: 12vh;
+           overflow: hidden;
+         }
+         
+         .navibar img {
+           height: 10vh;
+           width: auto;
+           justify-self: start;
+           margin-left: 60px;
+         }
+         
+         .navibar ul {
+           list-style: none;
+           display: grid;
+           grid-template-columns: repeat(6,1fr);
+           justify-self: end;
+           
+         }
+         
+         .navi-item a {
+           color: rgb(102, 102, 102);
+           font-size: 1.1rem;
+           font-weight: 400;
+           text-decoration: none;
+           transition: color 0.3s ease-out;
+         }
+         
+         .navi-item a:hover {
+           color: #193755;
+         }
+         ul {
+             margin: 0px;
+             padding: 0px;
+         }
+         .menu-toggle .bar{
+ width: 25px;
+ height: 3px;
+ background-color: #3f3f3f;
+ margin: 5px auto;
+ -webkit-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle {
+ justify-self: end;
+ margin-right: 25px;
+ display: none;
+}
+
+.menu-toggle:hover{
+ cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+ opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+ -webkit-transform: translateY(8px) rotate(45deg);
+ -ms-transform: translateY(8px) rotate(45deg);
+ -o-transform: translateY(8px) rotate(45deg);
+ transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+ -webkit-transform: translateY(-8px) rotate(-45deg);
+ -ms-transform: translateY(-8px) rotate(-45deg);
+ -o-transform: translateY(-8px) rotate(-45deg);
+ transform: translateY(-8px) rotate(-45deg);
+}
+@-webkit-keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+@-moz-keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+@keyframes gradbar {
+   0% {
+       background-position: 0% 50%
+   }
+   50% {
+       background-position: 100% 50%
+   }
+   100% {
+       background-position: 0% 50%
+   }
+}
+
+/* Media Queries */
+
+ /* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) { 
+ .features {
+   flex-direction: column;
+   padding: 50px;
+ }
+ 
+ /* MOBILE HEADINGS */
+ 
+ h1 {
+   font-size: 1.9rem;
+ }
+ 
+ h2 {
+   font-size: 1rem;
+ }
+ 
+ p {
+   font-size: 0.8rem;
+ }
+ 
+ /* MOBILE NAVIGATION */
+    
+ .navibar ul {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   justify-content: start;
+   top: 55px;
+   background-color: #fff;
+   width: 100%;
+   height: calc(100vh - 55px);
+   transform: translate(-101%);
+   text-align: center;
+   overflow: hidden;
+ }
+ 
+ .navibar li {
+   padding: 15px;
+ }
+ 
+ .navibar li:first-child {
+   margin-top: 50px;
+ }
+ 
+ .navibar li a {
+   font-size: 1rem;
+ }
+  
+ .menu-toggle, .bar {
+   display: block;
+   cursor: pointer;
+ }
+ 
+ .mobile-navi {
+ transform: translate(0%)!important;
+}
+}
+</style>
+    </head>
+
+    <body class="page">
+        <!-- Top Bar Start -->
+   <!-- Nav Bar Start -->
+   <div class="navi-wrapper">
+    <nav class="navibar nav-sticky">
+      <img src="logo.png" alt="Company Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+        <li class="navi-item"><a href="index.html">Home</a></li>
+        <li class="navi-item"><a href="#about">About</a></li>
+        <li class="navi-item"><a href="service.html">Services</a></li>
+        <li class="navi-item"><a href="index.html">Blog</a></li>
+        <li class="navi-item"><a href="#contact">Contact Us</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+<!-- <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Confer</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="feature.html" class="nav-item nav-link">Feature</a>
+                <a href="advisor.html" class="nav-item nav-link">Advisor</a>
+                <a href="review.html" class="nav-item nav-link">Review</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html" class="dropdown-item">Blog Page</a>
+                        <a href="single.html" class="dropdown-item">Single Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Nav Bar End -->
+
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-1.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Fastest Way to Achieve Success</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn" href="#contact"><i class="fa fa-link"></i>Get Started</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-2.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Your Success Our Achievement</h1>
+                    <p>
+                        Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn" href="#contact"><i class="fa fa-link"></i>Get Started</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-3.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Your Business Our Effort</h1>
+                    <p>
+                        Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn" href="#contact"><i class="fa fa-link"></i>Get Started</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+      
+<div class="contain mt-5">
+    <div class="row s1 mt-5 ">
+      <div class="col-md-4 mt-5 ">
+          <div class="content-inner fl-wrap">
+          <div class="content-front">
+            <div class="cf-inner">
+              <div class="bg" style="background-image: url(https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=830&q=80);"></div>
+              <div class="overlay"></div>
+              <div class="inner">
+                <h2>Web Design</h2>
+       
+              </div>
+            </div>
+          </div>
+          <div class="content-back">
+            <div class="cf-inner">
+              <div class="inner">
+                <div class="dec-icon">
+                   <img src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_960_720.png" alt="" srcset="" width="35%">
+                   
+                  
+                </div>
+                <p>Encodaid develops client- centred websites that not only fits the recent trend but also is convenient in operating.</p>
+                <div class="serv-price-wrap"><a href="#web"><span>See</span>more</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="content-inner fl-wrap">
+          <div class="content-front">
+            <div class="cf-inner">
+              <div class="bg " style="background-image: url(https://www.mobiloitte.com/blog/wp-content/uploads/2016/10/app-developers.png);"></div>
+              <div class="overlay"></div>
+              <div class="inner">
+                <h2>App Designing</h2>
+                
+              </div>
+            </div>
+          </div>
+          <div class="content-back">
+            <div class="cf-inner">
+              <div class="inner">
+                <div class="dec-icon">
+                   <img src="./img/app.png" alt="" srcset="" width="50%">
+                </div>
+                <p>In a wold of apps we help you to built one that stands out.</p>
+                <div class="serv-price-wrap"><a href="#app"><span>See</span>more</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5">
+        <div class="content-inner fl-wrap">
+          <div class="content-front">
+            <div class="cf-inner">
+              <div class="bg" style="background-image: url(https://frontiermarketingllc.com/wp-content/uploads/2020/02/be-open-to-change-with-your-logo.jpg);"></div>
+              <div class="overlay"></div>
+              <div class="inner">
+                <h2>Logo Designing</h2>
+
+              </div>
+            </div>
+          </div>
+          <div class="content-back">
+            <div class="cf-inner">
+              <div class="inner">
+                <div class="dec-icon">
+                  <!--here you can use any icon svg file--->
+                  <img src="./img/logodesign.png" alt="" srcset="" width="50%">
+                </div>
+                <p>The timeless versatility of designs grab the eye balls of audience and fixate them to halt midway.</p>
+                <div class="serv-price-wrap"><a href="#logo"><span>See</span>more</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="containers">
+ 
+   <!--  image left  -->
+   <div class="row block" id="web">
+     <div class="col-md-6">
+ 
+       <img src="https://digitaltreespace.com/img/about/ff.gif" alt="" class="w-100" />
+     </div>
+   
+     <div class="col-md-6">
+ 
+       <div class="row align-items-center h-100 center">
+         <div class="col">
+           <h1 class="display-3" style="color: midnightblue;">Web development</h1>
+           <p class="lead">Encodaid develops client- centred websites that not only fits the recent trend but also is convenient in operating. We make all the types of websites i.e. from static to e-commerce and from single- page to content management systems. Our experts specially plan and execute each website with precision and with accuracy..
+             <br /><br />
+             <a href="#contact" class="">Learn More</a>
+           </p>
+ 
+     </div>
+       </div>
+ 
+     </div>
+     
+ 
+   </div>
+   <!-- /.row -->
+ 
+   <!--  image right  -->
+   <div class="row block" id="app">
+     <div class="col-md-6 order-md-6 ">
+ 
+       <img src="https://d22rxqj6e2v058.cloudfront.net/wp-content/uploads/2019/05/laser-web-maker1.gif" alt="" class="w-100 center"  style="margin-top: 10px;"/>
+     </div>
+     <!-- /.col-md-6 -->
+     <div class="col-md-6 order-md-1">
+ 
+       <div class="row align-items-center h-100 center">
+         <div class="col">
+           <h1 class="display-3" style="color: midnightblue;">App Development</h1>
+           <p class="lead">
+            Our experts excel in curating modern day applications that are user friendly and efficient. Creating Applications for both android and iOS users, Encodaid uses methods like RAD and waterfall to design applications that match the satisfactory levels of the clients and users alike.
+             <br /><br />
+             <a href="#contact" class="">Learn More</a>
+           </p>
+ 
+         </div>
+       </div>
+ 
+     </div>
+     <!-- /.col-md-6 -->
+ 
+   </div>
+   <!-- /.row -->
+      <!--  image left  -->
+      <div class="row block" id="logo">
+       <div class="col-md-6">
+   
+         <img src="https://crello-wordpress.s3.eu-west-1.amazonaws.com/create/wp-content/uploads/2020/02/designed-logos.png" alt="" class="w-100" />
+       </div>
+       <!-- /.col-md-6 -->
+       <div class="col-md-6">
+   
+         <div class="row align-items-center h-100 center">
+           <div class="col">
+             <h1 class="display-3" style="color: midnightblue;">Logo Designing</h1>
+             <p class="lead">
+              Building a brand identity requires taking 100% responsibility and Encodaid boldly takes on the accountability of designing a clients logo with aesthetic and creativity at max. The timeless versatility of designs grab the eye balls of audience and fixate them to halt midway.
+               <br /><br />
+               <a href="#contact" class="">Learn More</a>
+             </p>
+   
+           </div>
+         </div>
+   
+       </div>
+       <!-- /.col-md-6 -->
+   
+     </div>
+     <!-- /.row -->
+ 
+ </div>
+
+<!-- Contact Start -->
+<div class="contact" >
+    <div class="container">
+        <div class="section-header">
+            <p id="contact">Get In Touch</p>
+            <h2>Get In Touch For Any Query</h2>
+        </div>
+        <div class="row align-items-center" >
+            <div class="col-md-5">
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Our Head Office</h3>
+                        <p>New Delhi,India</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Call for Help</h3>
+                        <p>+9184688 97888</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email for Information</h3>
+                        <p>contact@encodaid.com </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-contact">
+                            <h2>Our Head Office</h2>
+                            <p><i class="fa fa-map-marker"></i>New Delhi, India</p>
+                            <p><i class="fa fa-phone"></i>+9184688 97888</p>
+                            <p><i class="fa fa-envelope"></i>contact@encodaid.com</p>
+                            <div class="footer-social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook-f"></i></a>
+                                <a href=""><i class="fa fa-youtube"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-link">
+                            <h2>Quick Links</h2>
+                            <a href="">Terms of use</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="footer-newsletter">
+                    <h2>Newsletter</h2>
+                    <p>
+                        Subscribe to our exiting news letter Today and get maynd blowing acticals and news related to tech buzz and hot news.
+                    </p>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email goes here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">ENCODAID</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Designed By <a href="https://encodaid.com">Encodaid</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+         width: 100vw;
+        }
+        
+        .content-front:nth-child(2):after {
+           content: '';
+        }
+        
+        
+        .bg-header {
+           background-color: rgb(16 255 0 / 20%);
+           padding: 12px 20px;
+           box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+        }
+        a:hover{
+         text-decoration:none;
+         color:#05C2DE;
+         text-shadow: 2px 1px 1px white;
+         transition:1s;
+        }
+        
+        .welcome-board-name
+        {
+             font-family: 'Vast Shadow', cursive;
+           color: #ffffff;
+           font-size: 2.3em;
+           text-shadow: 1px 2px 3px #03802a;
+           
+        }
+        
+        .content-inner {
+         width: 100%;
+         color: #fff;
+         position: relative;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         backface-visibility: hidden;
+         transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .fl-wrap {
+         float: left;
+         width: 100%;
+         position: relative;
+        }
+        
+        .content-inner .content-front,
+        .content-inner .content-back {
+         position: relative;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         backface-visibility: hidden;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        
+        .content-front {
+         background: #292929;
+         position: relative;
+        }
+        
+        .content-inner > * {
+         backface-visibility: hidden;
+         transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .cf-inner:before,
+        .cf-inner:after {
+         content: "";
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-color: rgba(255, 255, 255, 0.4);
+         z-index: 10;
+        }
+        
+        .cf-inner:before {
+         top: 20px;
+         left: 20px;
+         border-left: 1px solid;
+         border-top: 1px solid;
+        }
+        .bg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background-size: cover;
+         background-attachment: scroll;
+         background-position: center;
+         background-repeat: repeat;
+         background-origin: content-box;
+        }
+        
+        .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: #000;
+         opacity: 0.4;
+         z-index: 3;
+        }
+        
+        .content-inner .cf-inner .inner {
+         align-items: stretch;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         backface-visibility: hidden;
+         transform: translateZ(95px) scale(0.81);
+         text-align: center;
+         position: relative;
+         z-index: 2;
+        }
+        
+        .cf-inner:after {
+         bottom: 20px;
+         right: 20px;
+         border-right: 1px solid;
+         border-bottom: 1px solid;
+        }
+        
+        .content-inner .cf-inner .inner h2 {
+          color: whitesmoke;
+         position: relative;
+         font-size: 22px;
+         font-weight: 800;
+         padding-bottom: 20px;
+        }
+        
+        .content-inner .cf-inner .inner h2:before {
+         content: "";
+         position: absolute;
+         left: 50%;
+         bottom: 10px;
+         width: 20px;
+         height: 2px;
+         margin-left: -10px;
+        }
+        
+        .content-inner .content-front li {
+         display: inline-block;
+         color: #fff;
+         text-transform: uppercase;
+         font-size: 10px;
+         letter-spacing: 2px;
+         margin: 0 4px;
+        }
+        .cf-inner:after {
+         bottom: 20px;
+         right: 20px;
+         border-right: 1px solid;
+         border-bottom: 1px solid;
+        }
+        
+        .content-inner .content-front,
+        .content-inner .content-back {
+         position: relative;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         backface-visibility: hidden;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        
+        .content-inner .cf-inner .inner {
+         align-items: stretch;
+         transform-style: preserve-3d;
+         perspective: 1000px;
+         backface-visibility: hidden;
+         transform: translateZ(95px) scale(0.81);
+         text-align: center;
+         position: relative;
+         z-index: 2;
+        }
+        
+        .content-inner:hover .content-front {
+         transform: rotateY(-180deg);
+        }
+        
+        .content-inner:hover .content-back {
+         transform: rotateY(0deg);
+        }
+        
+        .content-inner .content-back {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 0;
+         transform: rotateY(180deg);
+         background: #292929;
+         background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+        }
+        
+        .content-inner .cf-inner {
+         transform-style: preserve-3d;
+         backface-visibility: hidden;
+         width: 100%;
+         padding: 150px 20px;
+        }
+        
+        .serv-price-wrap {
+         background: rgba(255, 255, 255, 0.05);
+         padding: 15px 30px;
+         margin-top: 14px;
+         font-size: 11px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+        }
+        
+        .content-inner .cf-inner .inner h2:before {
+         background: #00bcd4;
+        }
+        
+        inner:before,
+        .cf-inner:after {
+         content: "";
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-color: rgba(255, 255, 255, 0.4);
+         z-index: 10;
+        }
+        
+        .cf-inner:before,
+        .cf-inner:after {
+         content: "";
+         position: absolute;
+         width: 50px;
+         height: 250px;
+         border-color: rgba(0, 188, 212, 0.33);
+         z-index: 10;
+        }
+        
+        .dec-icon {
+         padding-bottom: 10px;
+        }
+        
+        .content-back .cf-inner:before {
+         top: 125px;
+        }
+        
+        .content-back .cf-inner:after {
+         bottom: 125px;
+        }
+         .block{
+             background-color: #fff;
+             padding: 10px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             border-radius: 10px;
+             margin-bottom: 50px;
+         }
+        
+        .contain{
+            padding-bottom: 3%;
+            background-image: url(https://freefrontend.com/assets/img/css-hero-effects/Diagonal-Hero-Div-With-CSS-Star-Animation-Background.gif);
+            background-size: 100% 120%;
+            margin: 0px;
+            width: 100vw;
+        }
+        .s1{
+            margin: 15px;
+        }
+        .center{
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .containers{
+            background-color: #779CFF;
+            background-size: 100% 120%;
+            padding: 10%;
+        }
+        /* custom-cursor */
+        /* =============================================================================================== */
+        .custom-cursor {
+         width: 3rem;
+         height: 3rem;
+         border: 1px solid hsla(0, 0%, 100%, .7);
+         border-radius: 100%;
+        
+         background: hsla(0, 0%, 80%, .2);
+         position: absolute;
+         z-index: 5;
+         transform: translate(-50%, -50%);
+        
+         pointer-events: none;
+        }
+        
+        
+        /* buttons */
+        /* =============================================================================================== */
+        /* btn-circle */
+        /* ---------------------------------------- */
+        .btn-circle {
+         width: 4rem;
+         height: 4rem;
+         border-radius: 100rem;
+        
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        
+        .w-100{
+          margin-top: 50px;
+        }
+        </style>
+</html>
