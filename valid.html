@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form</title>
+
+    <script>
+        function validateForm(){
+            var fn = document.forms["myForm"]["fname"].value;
+            var ln = document.forms["myForm"]["lname"].value;
+            var roll = document.forms["myForm"]["froll"].value;
+            if(fn == ""){
+                alert("First Name Can't be blank");
+                return false;
+            }
+            if(ln == ""){
+                alert("Last Name can't be blank");
+                return false;
+            }
+            if(roll == ""){
+                alert("Roll can't be blank");
+                return false;
+            }
+
+            // var dt = document.forms["myForm"]["dname"].value;
+            // var dateReg = /^\d{2}([./-])\d{2}\1\d{4}$/
+            // if(dt.match(dateReg)){
+            //     return true;
+            // }
+            // else{
+            //     alert("Date not correct");
+            //     return false;
+            // }
+
+            var mobno = document.forms["myForm"]["fmobile"].value;
+            var phoneReg = /^\d{10}$/;
+            if(mobno.match(phoneReg)){
+                return true;
+            }
+            else{
+                alert("Invalid Mobile no.");
+                return false;
+            }
+
+            // var email = document.forms["myForm"]["femail"].value;
+            // var emailPattern = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+            // if(email.match(emailPattern)){
+            //     return true;
+            // }
+            // else{
+            //     alert("Invalid Email");
+            //     return false;
+            // }
+            
+
+            
+
+        }
+        function validateEmail(){
+            if (/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/.test(myForm.femail.value)){
+                return true;
+            }
+            else{
+                alert("You have entered an invalid email address!");
+                return false;
+            } 
+
+        }
+
+        function validateUrl(){
+            var url = document.forms["myForm"]["furl"].value;
+            var urlReg = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%.\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%\+.~#?&//=]*)/;
+            if(url.match(urlReg)){
+                return true;
+            }
+            else{
+                alert("Invalid Url");
+                return false;
+            }
+        }
+
+
+
+    </script>
+
+    <style>
+        legend{
+            display: block;
+            margin: auto;
+            font-style: italic;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <br><br>
+            
+            <label for="">Student name:* </label>
+            <input type="text" id="fname" name="fname">
+            <input type="text" id="lname" name="lname">
+            <br><br>
+            <label for="fgen">Gender:* </label>
+
+            <input type="radio" id="fradio" name="fradio" value="Male" >
+            <label for="fname">Male</label>
+            <input type="radio" id="fradio" name="fradio" value="Female" >
+            <label for="fname">Female</label>
+            <br><br>
+            
+            <label for="dname">Date of Birth:*</label>
+            <input type="date" id="dname" name="dname" >
+            <br><br>
+
+            <label for="froll">Roll Number:*</label>
+            <input type="number" id="froll" name="froll">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="fimage">Upload your photo*</label>
+            <input type="file" accept="image/*" >
+            <br><br>
+
+            <label for="fbranch">Branch:*</label>
+            <select name="Branch" id="Branch">
+                <option value="">Select</option>
+                <option value="IT">IT</option>
+                <option value="CS">CS</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="ice">ICE</option>
+            </select>
+            <br><br>
+
+            <label for="fadd">Address:*</label>
+            <textarea name="Address" id="Address" cols="30" rows="8"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Contact Information</b></legend>
+            <br><br>
+
+            <label for="fmobile">Mobile Number:*</label>
+            <input type="number" id="fmobile" name="fmobile">
+            <br><br>
+
+            <label for="femail">Email Address:*</label>
+            <input type="text" name="femail" id="femail" onchange="validateEmail()">
+            <br><br>
+
+            <label for="furl">Website Blog URL:*</label>
+            <input type="text" name="furl" id="furl" onchange="validateUrl()">
+            <br><br>
+            <label for="fadd">Address:*</label>
+            <textarea name="Address" id="Address" cols="30" rows="8"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Academic Qualifications</b></legend>
+            <table border="1" align="center" cellpadding = "5" cellspacing = "5">
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institute</th>
+                        <th>Year of Passing</th>
+                        <th>Percentage %</th>
+                        <th>Select Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            10 <sup>th</sup> Grade
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="School Name">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="Year">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="%">
+                        </td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12 <sup>th</sup> Grade
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="School Name">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="Year">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="%">
+                        </td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Add More">
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="School Name">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="Year">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="" placeholder="%">
+                        </td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button>Add More Degree</button>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+   
+</body>

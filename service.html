@@ -18,233 +18,35 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <style>
             @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-           
-       .navibar{
-           display: grid;
-           grid-template-columns: 1fr 3fr;
-           align-items: center;
-           height: 12vh;
-           overflow: hidden;
-         }
-         
-         .navibar img {
-           height: 10vh;
-           width: auto;
-           justify-self: start;
-           margin-left: 60px;
-         }
-         
-         .navibar ul {
-           list-style: none;
-           display: grid;
-           grid-template-columns: repeat(6,1fr);
-           justify-self: end;
-           
-         }
-         
-         .navi-item a {
-           color: rgb(102, 102, 102);
-           font-size: 1.1rem;
-           font-weight: 400;
-           text-decoration: none;
-           transition: color 0.3s ease-out;
-         }
-         
-         .navi-item a:hover {
-           color: #193755;
-         }
-         ul {
-             margin: 0px;
-             padding: 0px;
-         }
-         .menu-toggle .bar{
- width: 25px;
- height: 3px;
- background-color: #3f3f3f;
- margin: 5px auto;
- -webkit-transition: all 0.3s ease-in-out;
- -o-transition: all 0.3s ease-in-out;
- transition: all 0.3s ease-in-out;
-}
 
-.menu-toggle {
- justify-self: end;
- margin-right: 25px;
- display: none;
-}
-
-.menu-toggle:hover{
- cursor: pointer;
-}
-
-#mobile-menu.is-active .bar:nth-child(2){
- opacity: 0;
-}
-
-#mobile-menu.is-active .bar:nth-child(1){
- -webkit-transform: translateY(8px) rotate(45deg);
- -ms-transform: translateY(8px) rotate(45deg);
- -o-transform: translateY(8px) rotate(45deg);
- transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-menu.is-active .bar:nth-child(3){
- -webkit-transform: translateY(-8px) rotate(-45deg);
- -ms-transform: translateY(-8px) rotate(-45deg);
- -o-transform: translateY(-8px) rotate(-45deg);
- transform: translateY(-8px) rotate(-45deg);
-}
-@-webkit-keyframes gradbar {
-   0% {
-       background-position: 0% 50%
-   }
-   50% {
-       background-position: 100% 50%
-   }
-   100% {
-       background-position: 0% 50%
-   }
-}
-
-@-moz-keyframes gradbar {
-   0% {
-       background-position: 0% 50%
-   }
-   50% {
-       background-position: 100% 50%
-   }
-   100% {
-       background-position: 0% 50%
-   }
-}
-
-@keyframes gradbar {
-   0% {
-       background-position: 0% 50%
-   }
-   50% {
-       background-position: 100% 50%
-   }
-   100% {
-       background-position: 0% 50%
-   }
-}
-
-/* Media Queries */
-
- /* Mobile Devices - Phones/Tablets */
-
-@media only screen and (max-width: 720px) { 
- .features {
-   flex-direction: column;
-   padding: 50px;
- }
- 
- /* MOBILE HEADINGS */
- 
- h1 {
-   font-size: 1.9rem;
- }
- 
- h2 {
-   font-size: 1rem;
- }
- 
- p {
-   font-size: 0.8rem;
- }
- 
- /* MOBILE NAVIGATION */
-    
- .navibar ul {
-   display: flex;
-   flex-direction: column;
-   position: fixed;
-   justify-content: start;
-   top: 55px;
-   background-color: #fff;
-   width: 100%;
-   height: calc(100vh - 55px);
-   transform: translate(-101%);
-   text-align: center;
-   overflow: hidden;
- }
- 
- .navibar li {
-   padding: 15px;
- }
- 
- .navibar li:first-child {
-   margin-top: 50px;
- }
- 
- .navibar li a {
-   font-size: 1rem;
- }
-  
- .menu-toggle, .bar {
-   display: block;
-   cursor: pointer;
- }
- 
- .mobile-navi {
- transform: translate(0%)!important;
-}
-}
 </style>
     </head>
 
     <body class="page">
         <!-- Top Bar Start -->
    <!-- Nav Bar Start -->
-   <div class="navi-wrapper">
-    <nav class="navibar nav-sticky">
-      <img src="logo.png" alt="Company Logo">
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav no-search">
-        <li class="navi-item"><a href="index.html">Home</a></li>  
-        <li class="navi-item"><a href="service.html">Services</a></li>
-        <li class="navi-item"><a href="#contact">Contact Us</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-<!-- <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+   <div class="navbar navbar-expand-lg bg-light navbar-light">
     <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">Confer</a>
+        <a href="index.html" class="navbar-brand"> <img src="logo.png" alt="Company Logo" class="navlog"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="feature.html" class="nav-item nav-link">Feature</a>
-                <a href="advisor.html" class="nav-item nav-link">Advisor</a>
-                <a href="review.html" class="nav-item nav-link">Review</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu">
-                        <a href="blog.html" class="dropdown-item">Blog Page</a>
-                        <a href="single.html" class="dropdown-item">Single Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="index.html" class="nav-item nav-link ">Home</a>
             </div>
         </div>
     </div>
-</div> -->
+</div> 
 <!-- Nav Bar End -->
 
 
@@ -565,7 +367,7 @@
                             <a href="">Privacy policy</a>
                             <a href="">Cookies</a>
                             <a href="">Help</a>
-                            <a href="">FQAs</a>
+                            <a href="">FAQs</a>
                         </div>
                     </div>
                 </div>
