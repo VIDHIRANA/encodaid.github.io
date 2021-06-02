@@ -224,7 +224,7 @@ a:focus {
 
 @media (min-width: 992px) {
     .navbar {
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
         /* top: 35px; */
         padding: 10;
@@ -234,7 +234,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #092a49 !important;
+        background: #ffffff !important;
     }
     
     /* .page .navbar {
