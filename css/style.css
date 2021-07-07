@@ -1063,7 +1063,29 @@ a:focus {
 .blog .blog-img img {
     width: 100%;
 }
-
+.latestblog{
+    width: 100vw;
+}
+.blogbtn{
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #092a49;
+    background: none;
+    border: 2px solid #092a49;
+    border-radius: 0;
+    transition: .3s;
+}
+.blogbtn:hover{
+    color: #0796fe;
+    background: #092a49;
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+}
 .blog .blog-content {
     position: relative;
     width: calc(100% - 60px);
@@ -1074,6 +1096,23 @@ a:focus {
     box-shadow: 0 0 30px rgba(0, 0, 0, .1);
     z-index: 2;
 }
+.content1{
+display: flex;
+/* justify-content: center; */
+align-self: center;
+}
+ .blog-content1 {
+    position: relative;
+    width: calc(100% - 60px);
+    padding: 25px 30px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+.b1i{
+   padding: 0px 50px; 
+}
+
 
 .blog .blog-content h2.blog-title {
     font-size: 25px;
