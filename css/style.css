@@ -272,7 +272,7 @@ a:focus {
     position: relative;
     width: 100%;
     height: calc(75vh - 35px);
-    min-height: 400px;
+    /* min-height: 400px; */
     background: #092a49;
     margin-bottom: 45px;
 }
@@ -478,7 +478,7 @@ a:focus {
     .carousel,
     .carousel .carousel-item,
     .carousel .carousel-text {
-        height: calc(70vh - 70px);
+        height: calc(52vh - 70px);
     }
     
     .carousel .carousel-text h1 {
@@ -508,6 +508,11 @@ a:focus {
         height: 66%;
         object-fit: cover;
     }
+    .carousel .carousel-img  {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+    }
 
     .carousel .owl-nav .owl-prev,
 .carousel .owl-nav .owl-next {
@@ -527,7 +532,7 @@ a:focus {
 @media (max-width: 450px) {
     .carousel .carousel-img1  {
         width: 100%;
-        height: 53%;
+        height: 68%;
         object-fit: cover;
     }
 }
